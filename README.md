@@ -1,6 +1,6 @@
 AWS-01 – S3 + CloudFront Portfolio Website
 
-##Project: Portfolio Website on AWS S3 + Cloudfront + Route 53 + ACM
+## Project: Portfolio Website on AWS S3 + Cloudfront + Route 53 + ACM
 
 ### Goal: Host a personal portfolio site using AWS serverless services with global HTTPS delivery.
 
