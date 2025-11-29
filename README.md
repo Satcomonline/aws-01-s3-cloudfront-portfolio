@@ -4,7 +4,8 @@ AWS-01 – S3 + CloudFront Portfolio Website
 
 ## Goal: Host a personal portfolio site using AWS serverless services with global HTTPS delivery.
 
-High-level flow:
+**bold** High-level flow:
+
 User → DNS (Route 53) → CloudFront (HTTPS) → S3 Static Website Endpoint → index.html
 
 Architecture:
