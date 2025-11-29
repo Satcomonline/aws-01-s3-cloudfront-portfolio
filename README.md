@@ -9,11 +9,13 @@ AWS-01 – S3 + CloudFront Portfolio Website
 User → DNS (Route 53) → CloudFront (HTTPS) → S3 Static Website Endpoint → index.html
 
 **Architecture:**
+
   Amazon S3 (Static website hosting)
   Cloudfront (CDN + HTTPS)
   Route 53 + ACM for custom domain
 
 **What I built:**
+
   Created an S3 bucket with static website hosting enabled.
   Uploaded static assets (HTML/CSS/images) to S3.
   Configured a public-read bucket policy for website content.
@@ -22,11 +24,13 @@ User → DNS (Route 53) → CloudFront (HTTPS) → S3 Static Website Endpoint �
   Configured custom domain + SSL via ACM & Route 53.
 
 **Tech Skills Demonstrated: **
+
   S3 bucket configuration, static web hosting, bucket policies.
   CloudFront distribution creation and cache behavior configuration.
   Basic DNS management and ACM TLS certificate setup.
 
 **Links:**
+
   CloudFront URL: https://d3jijzkbd3efvw.cloudfront.net
   
   Custom Domain: www.awsdjm.com
