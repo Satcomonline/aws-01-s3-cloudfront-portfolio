@@ -23,7 +23,7 @@ User → DNS (Route 53) → CloudFront (HTTPS) → S3 Static Website Endpoint �
   Enabled Redirect HTTP to HTTPS and set index.html as the default root object.
   Configured custom domain + SSL via ACM & Route 53.
 
-**Tech Skills Demonstrated: **
+**Tech Skills Demonstrated:**
 
   S3 bucket configuration, static web hosting, bucket policies.
   CloudFront distribution creation and cache behavior configuration.
