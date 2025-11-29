@@ -29,6 +29,37 @@ User → DNS (Route 53) → CloudFront (HTTPS) → S3 Static Website Endpoint �
   CloudFront distribution creation and cache behavior configuration.
   Basic DNS management and ACM TLS certificate setup.
 
+                          ┌──────────────────────────────┐
+                        │            User              │
+                        │  (Browser visits awsdjm.com) │
+                        └───────────────┬──────────────┘
+                                        │
+                                        ▼
+                        ┌────────────────────────────────┐
+                        │        Route 53 DNS            │
+                        │  (Public hosted zone for       │
+                        │       awsdjm.com )             │
+                        └───────────────┬────────────────┘
+                                        │ A Alias record
+                                        ▼
+                        ┌────────────────────────────────┐
+                        │       Amazon CloudFront         │
+                        │   • Global CDN                  │
+                        │   • HTTPS via ACM certificate   │
+                        │   • Redirect HTTP → HTTPS       │
+                        │   • Cached content at edge      │
+                        └───────────────┬────────────────┘
+                                        │ Origin request
+                                        ▼
+                        ┌────────────────────────────────┐
+                        │            S3 Bucket            │
+                        │  • Static website hosting       │
+                        │  • index.html as root           │
+                        │  • Bucket policy: public read   │
+                        │  • Stores HTML/CSS/images       │
+                        └────────────────────────────────┘
+
+
 **Links:**
 
   CloudFront URL: https://d3jijzkbd3efvw.cloudfront.net
